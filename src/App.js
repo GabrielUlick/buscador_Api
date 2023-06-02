@@ -17,7 +17,7 @@ function App() {
       const response = await api.get(`${input}/json`);
       
       if (response.data.complemento === "") {
-        response.data.complemento = "Não possui complemento";
+        response.data.complemento = "Não possui";
       }
       
       setCep(response.data);
